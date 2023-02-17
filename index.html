@@ -13,14 +13,13 @@
 <!-- navbar -->
 
   <!-- texto izquierda -->
-
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid d-flex bd-highlight">
       <div class="p-2 flex-grow-1 bd-highlight"><a class="navbar-brand"><i class="fa-brands fa-instagram"></i> Instagram</a></div>
   
   <!-- menu modal -->
-
       <div class="p-2 bd-highlight">
+
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Create a new post
@@ -42,8 +41,9 @@
                   </div>
                 </form>
 
-                  <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-camera"></i></button>
-                  <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-location-dot"></i></button>
+                  <!-- botones del modal -->
+                  <button type="button" class="btn bg-light text-dark border"><i class="fa-solid fa-camera"></i></button>
+                  <button type="button" class="btn bg-light text-dark border"><i class="fa-solid fa-location-dot"></i></button>
               
               </div>
               <div class="modal-footer">
@@ -56,8 +56,7 @@
       </div>
   
       <!-- dropdown       -->
-  
-      <div class="p-2 bd-highlight">
+      <div class="bd-highlight">
         <div class="dropdown">
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-gear"></i>
@@ -76,10 +75,9 @@
   </nav>
  
 <!-- galeria de fotos -->
+<div class="container-fluid mt-3">
 
-<div class="container mt-3">
-
-  <!-- Nav pills (botones)-->
+  <!-- Nav pills-botones-->
   <ul class="nav nav-pills justify-content-center" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" data-bs-toggle="pill" href="#view1"><i class="fa-solid fa-table-cells"></i></a>
@@ -89,44 +87,43 @@
     </li>
   </ul>
 
-  <!-- Tab panes (fotos)-->
+  <!-- Tab fotos-->
   <div class="tab-content">
-    <!-- tab1 -->
-    <div id="view1" class="container tab-pane active"><br>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 p-1">
-            <img src="https://picsum.photos/400?random=1" alt="" class="img-fluid">
-          </div>
-          <div class="col-md-4 p-1">
-            <img src="https://picsum.photos/400?random=2" alt="" class="img-fluid">
-          </div>
-          <div class="col-md-4 p-1">
-            <img src="https://picsum.photos/400?random=3" alt="" class="img-fluid">
-          </div>
-          <div class="col-md-4 p-1">
-            <img src="https://picsum.photos/400?random=4" alt="" class="img-fluid">
-          </div>
-          <div class="col-md-4 p-1">
-            <img src="https://picsum.photos/400?random=5" alt="" class="img-fluid">
-          </div>
-          <div class="col-md-4 p-1">
-            <img src="https://picsum.photos/400?random=6" alt="" class="img-fluid">
-          </div>
+
+    <!-- tab1-cuadricula -->
+    <div id="view1" class="tab-pane active"><br>
+      <div class="row">
+        <div class="col-md-4 p-1">
+          <img src="https://picsum.photos/400?random=1" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-md-4 p-1">
+          <img src="https://picsum.photos/400?random=2" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-md-4 p-1">
+          <img src="https://picsum.photos/400?random=3" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-md-4 p-1">
+          <img src="https://picsum.photos/400?random=4" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-md-4 p-1">
+          <img src="https://picsum.photos/400?random=5" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-md-4 p-1">
+          <img src="https://picsum.photos/400?random=6" alt="" class="img-fluid w-100">
         </div>
       </div>
     </div>
 
-    <!-- tab2 -->
-    <div id="view2" class="container tab-pane"><br>
-
-        <div class="d-flex justify-content-center mb-2">
-          <div class="card" style="width: 800px;">
+    <!-- tab2-una columna -->
+    <div id="view2" class="tab-pane w-75 mx-auto"><br>
+      
+        <div class="d-flex mb-2">
+          <div class="card">
             <div class="card-body d-flex justify-content-between">
               <h3 class="card-title">My Crazy photo!</h3>
               <p class="card-text"><small class="text-muted">08/26</small></p>
             </div>
-            <img src="https://picsum.photos/500?random=1" class="card-img-top" alt="...">
+            <img src="https://picsum.photos/900?random=1" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text mb-0"><strong>204 Likes</strong></p>
               <p class="card-text">This is an example of a very good photo you can post on instagram</p>
@@ -134,13 +131,13 @@
           </div>
         </div>
 
-        <div class="d-flex justify-content-center mb-2">
-          <div class="card" style="width: 800px;">
+        <div class="d-flex mb-2">
+          <div class="card">
             <div class="card-body d-flex justify-content-between">
               <h3 class="card-title">The greatness view!</h3>
               <p class="card-text"><small class="text-muted">04/09</small></p>
             </div>
-            <img src="https://picsum.photos/500?random=2" class="card-img-top" alt="...">
+            <img src="https://picsum.photos/900?random=2" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text mb-0"><strong>411 Likes</strong></p>
               <p class="card-text">This is an example of a very good photo you can post on instagram</p>
@@ -148,13 +145,13 @@
           </div>
         </div>
 
-        <div class="d-flex justify-content-center mb-2">
-          <div class="card" style="width: 800px;">
+        <div class="d-flex mb-2">
+          <div class="card">
             <div class="card-body d-flex justify-content-between">
               <h3 class="card-title">Amazing!</h3>
               <p class="card-text"><small class="text-muted">08/26</small></p>
             </div>
-            <img src="https://picsum.photos/500?random=3" class="card-img-top" alt="...">
+            <img src="https://picsum.photos/900?random=3" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text mb-0"><strong>305 Likes</strong></p>
               <p class="card-text">This is an example of a very good photo you can post on instagram</p>
